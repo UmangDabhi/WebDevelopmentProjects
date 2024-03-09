@@ -9,12 +9,14 @@ body{
 .container{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    justify-content: space-between;
+    margin: 50px;
     gap: 20px;
 }
 .container a{
     display: grid;
     place-content: center;
+    text-align: center;
     height: 200px;
     width: 200px;
     background-color: aqua;
