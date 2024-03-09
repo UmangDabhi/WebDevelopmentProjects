@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym By UB</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo Bhai"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(img/pexels-william-choquette-1954524.jpg);
+        background-size: cover;
+        background-position: center;
+        background-position-y:5%;
+        font-family: "Baloo Bhai", "Arial", "TimesNewRoman";
+        font-size: 22px;
+        color: black;
+      }
+      .left {
+        border: 2px white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 20px;
+        border-style: double;
+        background-color: black;
+        color: white;
+        padding: 16px;
+      }
+      .mid {
+        /* border: 2px solid green; */
+        border-radius: 20px;
+        background-color: rgba(250, 241, 230, 0.404);
+        display: inline-block;
+        position: sticky;
+        top: 3px;
+        left: 200px;
+        width: 70%;
+        margin: 2px auto;
+      }
+      .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+      }
+      .navbar {
+        text-align: center;
+      }
+      .navbar li {
+        display: inline;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: rgb(32, 169, 190);
+        padding: 10px;
+        margin: 20px;
+      }
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(42, 91, 98);
+      }
+      .btn {
+        border-radius: 10px;
+        border-style: none;
+        border-width: 2px;
+        padding: 2px;
+        margin: 12px 6px;
+        background-color: antiquewhite;
+      }
+
+      header button:hover {
+        border: 2px solid white;
+        color: #fff;
+        font-weight: bold;
+        background-color: lightskyblue;
+        cursor: pointer;
+        transition: 0.2s;
+
+      }
+
+      .btn a {
+        text-decoration: none;
+        font-family: "Baloo Bhai";
+        font-size: 20px;
+        color: darkslategrey;
+        padding: 6px;
+      }
+
+      .container {
+        border: 2px solid black;
+        display: inline-block;
+        margin: 70px 110px;
+        width: 500px;
+        height: 350px;
+        text-align: center;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.163);
+      }
+      h3 {
+        padding: 20px;
+        margin: 0px;
+        color: white;
+        text-shadow: 2px 2px black;
+        text
+      }
+      form div input {
+        font-family: "Baloo Bhai", "Arial", "TimesNewRoman";
+        font-size: 16px;
+        margin: 6px 6px;
+        border-radius: 6px;
+      }
+      form div button {
+        display: inline-block;
+        width: 175px;
+        border: 1px solid black;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      form div button:hover {
+        border: 2px solid white;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+        cursor: pointer;
+        transition: 0.3s;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header class="headerClass">
+      <div class="left">BOSS</div>
+      <div class="mid">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fees structure</a></li>
+            <li><a href="#">why us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <button class="btn">
+          <a href="https://www.google.com/">Google</a>
+        </button>
+        <button class="btn">
+          <a href="https://twitter.com/share">Twitter</a>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <h3>Join the GYM Now</h3>
+      <form action="noaction.php">
+        <div><input type="text" placeholder="Enter your name" /></div>
+        <div><input type="text" placeholder="Enter your age" /></div>
+        <div><input type="text" placeholder="Enter your email ID" /></div>
+        <div><input type="text" placeholder="Enter your MobileNumber" /></div>
+        <div><input type="text" placeholder="Enter your Gender" /></div>
+        <div><button class="btn">Submit</button></div>
+      </form>
+    </div>
+  </body>
+</html>

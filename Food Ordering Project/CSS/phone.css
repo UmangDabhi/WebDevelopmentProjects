@@ -1,0 +1,45 @@
+#LOGO{
+    margin-top: 10px;
+}
+.heading h1{
+    font-size: 2.3rem;
+}
+.heading p{
+    font-size: 0.8rem;
+}
+.navbar{
+    flex-direction: column;
+}
+.navbar-container{
+    position: absolute;
+    top:60px;
+    right:auto;
+    justify-content: center;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -2;
+  }
+.Offers{
+    flex-wrap: wrap;
+}
+#feedback{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#feedback form{
+    width: 65vw;
+    align-items: center;
+}
+.contact-us{
+    width: 85vw;;
+}
+.Information{
+    width: 85vw;
+}

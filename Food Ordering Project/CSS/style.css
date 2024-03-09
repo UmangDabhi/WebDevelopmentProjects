@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+.navbar::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -2;
+}
+.navbar-container {
+  position: absolute;
+  right: 28px;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline;
+}
+.navbar li a {
+  text-decoration: none;
+  padding: 5px 34px;
+  text-shadow: 1px 1px black;
+  color: white;
+}
+.navbar li a:hover {
+  text-shadow: 1px 1px white;
+  color: black;
+}
+#LOGO {
+  color: white;
+  background-color: black;
+  margin: 0px 10px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  transition: all 1s;
+}
+#LOGO:hover {
+  color: black;
+  background-color: white;
+  text-shadow: 2px 2px whitesmoke;
+}
+
+.btn{
+    background-color: tomato;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+/* main section*/
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  background: url(../Img/bg1.jpg) no-repeat center center / cover;
+  width: 100vw;
+  height: 490px;
+  opacity: 0.5;
+  z-index: -1;
+}
+.heading h1 {
+  margin: 20px 2px;
+  margin-top: 155px;
+  font-size: 3.5rem;
+  text-shadow: 1px 1px tomato;
+  display: inline-block;
+}
+.heading p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px rgba(255, 99, 71, 0.219);
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* offer section */
+.Offers {
+  display: flex;
+  justify-content: center;
+}
+.Offers img {
+  height: auto;
+  width: 150px;
+  margin-bottom: 4px;
+}
+.offerImage{
+    display: flex;
+    justify-content: center;
+}
+.Offers > div {
+  display: block;
+  height: auto;
+  width: 500px;
+  border: 2px solid red;
+  margin: 2px 8px;
+  background-color: rgb(255, 236, 212);
+}
+.Offers p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+#feedback{
+    display: flex;
+}
+
+#feedback form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin:10px 10px;
+}
+form label{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.form-field{
+    opacity: 0;
+    height: 0px;
+    transition: all 1.3s ease-out;
+}
+.hover-text:hover + .form-field{
+    opacity: 1;
+    height: 20px;
+    pointer-events: auto;
+}
+
+.contact-us{
+    display: inline-block;
+    width: 45vw;
+    margin: 10px 10px;
+    background-color: aquamarine;
+}
+.Information{
+    display: inline-block;
+    width: 45vw;
+    margin: 10px 10px;
+    background-color: lightblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-weight: Bold;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    opacity: 0.69;
+}
+/* Utility classes */
+.h-primary {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
