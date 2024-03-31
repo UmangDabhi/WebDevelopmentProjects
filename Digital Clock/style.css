@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+}
+.card{
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0px 0px 10px #abcdef;
+    border: 2px solid blue;
+    max-width: 400px;
+    transition: all 1s linear;
+    animation: glow 0.5s infinite alternate;
+}
+@keyframes glow {
+    from{
+        box-shadow: 0px 0px 10px #abcdef;
+    }to{
+        box-shadow: 0px 0px 20px #75ace3,
+        0px 0px 30px #2f90f2,
+        0px 0px 35px #00e1ff;
+    }
+}
+
+h1{
+    text-align: center;
+    background-color: blue;
+    padding: 10px 0px;
+    margin: 0px 0px 10px;
+    color:white;
+    border-radius: 10px 10px 0px 0px;
+}
+.clock{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.time-element,.colon-element{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin: 0px 10px;
+}
