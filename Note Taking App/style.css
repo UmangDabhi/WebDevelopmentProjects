@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, rgb(244,112,156),rgb(255,148,114));
+}
+#main{
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#addbtn{
+    position: fixed;
+    top:10px;
+    right: 10px;
+    background-color: #179212;
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#addbtn:hover{
+    background-color: #28d50a;
+}
+.addIcon{
+    font-size: 15px !important;
+}
+.note{
+    background: transparent;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tool{
+    background-color: #223232;
+    color:white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.tool span{
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.tool span:hover{
+    color: #aca1a1;   
+}
+.note textarea{
+    width: 300px;
+    resize: none;
+    border: none;
+    min-height:220px;
+    background-color: #393e46;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    transition: all 0.3s ease;
+}
+.note textarea:hover{
+    background-color: #293e46;
+}
